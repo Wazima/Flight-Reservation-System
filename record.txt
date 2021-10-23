@@ -1,6 +1,23 @@
 Bhatti,female,17,bahawalpur,1234,ki009,pindi,bussiness.
 
-Wizi,f,20,multan,8765,islo,economy.
+
+
+
+
+
+
+
+wizi,f,20,multan,9876,hb765,islamabad,economy.
+
+
+
+
+
+
+
+
+hadia,f,20,daska,6543,bh876,islamabad,bussiness.
+
 
 
 

@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class Flight {
+public class Flight extends Passenger{
 	
 	String flight_name;
 	String origin;
@@ -23,8 +23,23 @@ public class Flight {
 	File obj=new File("flightRecord.txt");
 	Scanner user_input= new Scanner(System.in);
 	String user;
-	Passenger p=new Passenger();
-	
+	//Passenger p=new Passenger();
+	public Flight() {
+		
+	}
+	public Flight(String passno,String name, String gen)
+	{
+		super(passno,name,gen);
+		flight_name=null;
+		origin=null;
+		destination=null;
+		passengers=null;
+		flight_date=null;
+		arrival_time=null;
+		departure_time=null;
+		seats_available=null;
+		Low_fare=null;
+	}
 	public void setName(String n) {
 		flight_name=n;
 	}
@@ -129,9 +144,10 @@ public class Flight {
 	}
 	
 	public void printTicket() {
-		System.out.println("Passport Number: "+p.getPassno());
-		System.out.println("Passenger Name: "+p.getname());
-		System.out.println("Gender: "+p.getgender());
+		//Passenger pass=new Passenger();
+		System.out.println("Passport Number: "+getPassno());
+		System.out.println("Passenger Name: "+getname());
+		System.out.println("Gender: "+getgender());
 		System.out.println("Flight origin: "+getOrigin() );
 		System.out.println("Flight destination: "+getDestination());
 		System.out.println("Departure Time: "+getTimeDep());

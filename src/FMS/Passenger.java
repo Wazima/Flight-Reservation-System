@@ -11,7 +11,16 @@ public class Passenger {
 	String destination;
 	String plane_type;
 	//Flight f=new Flight();
-	
+	public Passenger()
+	{
+		
+	}
+	public Passenger(String passno,String nme,String gen)
+	{
+		passport_no=passno;
+		name=nme;
+		gender=gen;
+	}
 	public void setname(String n)
 	{
 		name=n;
@@ -49,7 +58,7 @@ public class Passenger {
 	}
 	
 	public String getPassno() {
-		System.out.println(passport_no);
+
 		return passport_no;
 	}
 	

@@ -16,20 +16,13 @@ public class FMS {
 		String array[] = {",",",",",",",",",",",",",",","};
 		String user;
 		Account a=new Account();
-		Flight f=new Flight();
+		
 		String arr[]={"Bhatti", "female", "17","bahawalpur" ,"1234","ki009","pindi" ,"bussiness","\n"};
 		String login[]= {"4568","Ki009"};
 		File objf=new File("flightRecord.txt");
 		File obj=new File("record.txt");
 		FileHandling fh=new FileHandling();
 		Passenger p=new Passenger();
-		p.setPassno(arr[4]);
-		//fh.writing(arr);
-		//fh.reading(arr);
-		//fh.Searching(arr);
-		
-		f.Writing();
-		f.reading();
 		
 		//main menu
 		System.out.println("Press...");
@@ -47,6 +40,8 @@ public class FMS {
 			a.login();
 			}break;
 		}
+		
+		Flight f=new Flight(p.getPassno(),p.getname(),p.getgender());
 		
 		do {
 		System.out.println("Press...");

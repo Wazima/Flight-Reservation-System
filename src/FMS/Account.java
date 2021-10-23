@@ -42,6 +42,7 @@ public class Account {
 		user=user_input.next();
 		arr[7]=user;
 		arr=fh.writing(arr);
+		fh.reading(arr);
 		
 		return arr;
 		
